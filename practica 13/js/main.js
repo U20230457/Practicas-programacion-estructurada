@@ -13,21 +13,19 @@ document.addEventListener('DOMContentLoaded', function () {
         toggleMode('reset')
     });
 
-
     function toggleMode(mode) {
-        document.body.classList.remove('dark-mode', 'reset-mode');
+        document.body.classList.remove('dark-mode','light-mode', 'reset-mode');
 
         if(mode === 'dark') {
         document.body.classList.add('dark-mode');
         alert('Modo Oscuro Activado');
-    } else if(mode === 'light'){
+        } else if(mode === 'light'){
         document.body.classList.add('light-mode');
         alert('Modo Claro Activado');
-    } else if(mode === 'reset') {
+        } else if(mode === 'reset') {
         document.body.classList.add('rest-mode');
         alert('Modo Reiniciado');
+        }
     }
-}
-
 });
 
