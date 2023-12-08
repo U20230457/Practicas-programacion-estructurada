@@ -2,7 +2,7 @@ const btnNew = document.getElementById('btn')
 const appNote = document.getElementById('app')
 
 //cargar notas existentes al cargar la pagina
-getNotes.forEach( note => {
+getNotes().forEach( note => {
     const noteNew = createNote(note.id, note.content)
     appNote.inserBefore(noteNew, btnNew)
 });
